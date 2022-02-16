@@ -16,6 +16,11 @@
     "url": "https://github.com/gurezo/open-api-sample/issues"
   },
   "homepage": "https://github.com/gurezo/open-api-sample#readme",
+  "scripts": {
+    "build:generator": "npx ",
+    "build:generator-cli": "npx ",
+    "build:swagger-cli": "npx swagger-cli bundle "
+  },
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.4.26",
     "openapi-generator": "^0.1.39",
