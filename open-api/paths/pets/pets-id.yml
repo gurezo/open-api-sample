@@ -16,10 +16,10 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/pet/pet.yml
+            $ref: ../../components/pet/pet.yml
     default:
       description: unexpected error
       content:
         application/json:
           schema:
-            $ref: ../components/error/error.yml
+            $ref: ../../components/error/error.yml

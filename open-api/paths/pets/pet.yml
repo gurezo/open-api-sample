@@ -22,13 +22,13 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/pet/pets.yml
+            $ref: ../../components/pet/pet.yml
     default:
       description: unexpected error
       content:
         application/json:
           schema:
-            $ref: ../components/error/error.yml
+            $ref: ../../components/error/error.yml
 post:
   summary: Create a pet
   operationId: createPets
@@ -42,4 +42,4 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../components/error/error.yml
+            $ref: ../../components/error/error.yml

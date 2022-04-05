@@ -9,7 +9,7 @@ servers:
 
 paths:
   /pets:
-    $ref: ./paths/pets/pets.yml
+    $ref: ./paths/pets/pet.yml
   /pets/{petId}:
     $ref: ./paths/pets/pets-id.yml
 # components:
