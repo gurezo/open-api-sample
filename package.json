@@ -6,7 +6,10 @@
   "scripts": {
     "bundle:api": "clear && rm -rf open-api-ts && rm -rf open-api-php && swagger-cli bundle -o ./open-api-yaml-build/open-api.build.yaml -t yaml ./open-api/open-api.yml",
     "build:open-api:ts": "openapi-generator-cli -- generate -g typescript-angular -i ./open-api-yaml-build/open-api.build.yaml -o ./open-api-ts",
-    "build:open-api:ts:one-file": "openapi-generator-cli -- generate -g typescript-angular -i ./one-file-config/petstore.yml -o ./open-api-ts"
+    "build:open-api:ts:one-file": "openapi-generator-cli -- generate -g typescript-angular -i ./one-file-config/petstore.yml -o ./open-api-ts",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "start": "node dist/index.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
